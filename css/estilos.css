@@ -1,0 +1,634 @@
+/*********************************/
+/* GENERAL*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: white;
+}
+ul,li,a{
+    text-decoration: none;
+    list-style: none;
+}
+/*************************************/
+/* GRID */
+main{
+    padding-bottom: 40px;
+}
+div section{
+    display: grid;
+    justify-content: center;
+}
+.navbar-brand img{
+    width: 95px;
+}
+main h3{
+    text-align:center
+}
+#nombreProducto{
+    color: gray;
+    font-size: 12pt;
+    font-weight: 600;
+}
+#precioProducto{
+    color: black;
+    font-size: 13pt;
+}
+header a{
+    color: black;
+}
+header{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+.contenedor{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.navLogo{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    align-items: center;
+    justify-items: center;
+    display: none;
+}
+.element1{
+    align-self: start;
+    justify-self: center;
+    display: none;
+}
+.element2{
+    justify-self: center;
+}
+.element2 img{
+    width: 100px;
+}
+.element3 span{
+    display: none;
+}
+.element3{
+    display: grid;
+}
+.element3 a{
+    font-size: 8pt;
+}
+.row a{
+    color: black;
+    font-size: 9pt;
+}
+h1{
+    justify-self: center;
+    font-size: 22pt;
+    padding-top: 12px;
+    font-weight: 600;
+}
+.productosMate{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.eslogan{
+    margin: auto;
+    display: table;
+}
+.eslogan h2{
+    font-size: 8pt;
+    font-style: italic;
+    text-align: left;
+    font-weight: 600;
+    float: left;
+    position: relative;
+}
+.eslogan span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: white;
+    border-left: 1px solid #000;
+    animation: maquina 5s infinite alternate steps(58);
+}
+/* ANIMACION */
+@keyframes maquina {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+.mates{
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-top: 60px;
+}
+.mate{
+    padding: 11px 0;
+}
+.mate img{
+    width: 100%;
+}
+.botones{
+    padding: 10px 0;
+    display:flex;
+    justify-content: center;
+}
+.botones a{
+    color: white;
+    text-decoration: none;
+    background: black;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5)
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .1);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(256, 256, 256, .0);
+    }
+    100%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, .0);
+    }
+}
+/** ERROR 404 **/
+.error-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+.error-message__container{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.error-message__container h1{
+    font-size: 100px;
+}
+.error-message__container p{
+    font-size: 28px;
+}
+.animated{
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce{
+    0%, 20%, 50%, 100% {transform: translate(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+.bounce{
+    animation-name: bounce;
+}
+/* PRODUCTOS */
+.tituloProductos{
+    text-decoration: none;
+    list-style: none;
+    font-size: 18pt;
+}
+.tituloProductos a{
+    color: gray;
+}
+.allProducts{
+    display: none;
+}
+/* GALERÍA */
+.tituloGaleria{
+    text-align: center;
+}
+.galeriaFotos img{
+    margin: 2px 0 2px 0;
+    width: 180px;
+}
+#principioGaleria{
+    width: 100%;
+}
+.restoGaleria{
+    margin-top: 30px;
+}
+/* CONTACTO */
+.contacto h1{
+    text-align: center;
+    font-size: 18pt;
+}
+.contacto{
+    display: grid;
+}
+.formularioContacto{
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+}
+/* INICIO DE SESION */
+.iniciar{
+    display: grid;
+    margin-top: 50px;
+}
+.rellenoInicio{
+    display: grid;
+    margin: 30px 0 90px 0;
+}
+.recuperarPass{
+    display: grid;
+    justify-content: center;
+}
+.ingresarUsuario{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+}
+.rellenoInicio a{
+    text-decoration:underline;
+    color: rgb(1, 1, 107);
+}
+.botonesIngresar{
+    margin-top: 10px;
+}
+/* REGISTRAR */
+.registro{
+    display: grid;
+}
+.registroEspacios{
+    display: grid;
+    justify-content: center;
+}
+.registro1{
+    display: grid;
+}
+.registro3{
+    display: grid;
+}
+/* COMPAÑÍA */
+.coorp{
+    display: grid;
+}
+.coorp p{
+    text-align: center;
+    margin-top: 20px;
+}
+#fondoCoorp{
+    width: 100%;
+}
+/* FOOTER */
+footer h4{
+    font-size: 10px;
+    font-weight: bold;
+}
+.redesSociales{
+    text-align: center;
+}
+.redesSociales i{
+    font-size: 14pt;
+    color: white;
+}
+.navFooter{
+    display: none;
+}
+.mediosDepago{
+    display: none;
+}
+footer{
+    color: white;
+    font-size: 9pt;
+    background-color: black;
+}
+footer h4{
+    font-weight: 600;
+}
+.footerContenedor{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    padding: 10px 0 10px 0;
+}
+div h4{
+    padding: 5px 0 5px 0;
+}
+#copyright{
+    display: grid;
+    justify-items: center;
+}
+#copyright h5{
+    font-size: 8px;
+}
+/*************************************/
+/* MEDIA QUERIES */
+/*DESKTOP*/
+@media only screen and (min-width:1280px){
+    .carousel{
+    display: flex;
+    justify-content: center;
+    }
+    .vuelticas{
+        width: 35rem;
+    }
+    .navLogo{
+        display: grid;
+    }
+    .navbar-brand img{
+        display: none;
+    }
+    .element1{
+        display: block;
+        margin-top: 10px;
+    }
+    .navLogo i{
+        display: none;
+    }
+    .element2 img{
+        width: 240px;
+    }
+    .container{
+        display: grid;
+    }
+    .row{
+        display: grid;
+        justify-content: center;
+    }
+    .element3{
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto;
+        align-self: start;
+        padding-top: 10px;
+    }
+    .element3 span{
+        display: block;
+    }
+    .element3 a{
+        padding: 0 10px;
+        font-size: 11pt;
+    }
+    .row a{
+        font-size: 14pt;
+    }
+    h1{
+        font-size: 60pt;
+        font-weight: 600;
+        padding: 40px 0 10px 0;
+    }
+    .eslogan h2{
+        font-size: 23pt;
+        font-weight: 500;
+        padding: 0 0 25px 0;
+    }
+    .mates{
+        grid-template-columns: repeat(5, auto);
+    }
+    .mate{
+        padding: 0 5px;
+    }
+    .mediosDepago{
+        display: block;
+    }
+    .mediosDepago i{
+        font-size: 20px;
+        padding: 1px 2px;
+    }
+    .navFooter{
+        display: block;
+    }
+    .navFooter a{
+        color: white;
+        text-decoration: none;
+        list-style: none;
+    }
+    .pieDepagina{
+        grid-template-rows: auto auto;
+        padding: 14px 0;
+    }
+    .footerContenedor{
+        grid-template-rows: auto;
+        grid-template-columns: repeat(5, auto);
+        justify-items: center;
+    }
+    .mapa h4{
+        text-align: center;
+    }
+    .mapa iframe{
+        width: 100%;
+    }
+    #copyright h5{
+        font-weight: 300;
+        font-size: 8pt;
+    }
+    .botones a{
+        padding: 4px 7px;
+    }
+    /* PRODUCTOS */
+    .allProducts{
+        display: block;
+    }
+    .listaProductos a{
+        color: black;
+    }
+    .allProducts h2{
+        margin-top: 20px;
+        font-size: 15pt;
+    }
+    .grillaProductos{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .divisionProductos{
+        margin: 10px 100px 0 20px;
+    }
+    .inicioYcreo{
+        display: none;
+    }
+    /* GALERÍA */
+    .tituloGaleria{
+    text-align: center;
+    font-size: 45pt;
+}
+    .galeriaFotos img{
+        display: flex;
+    margin: 2px 0 2px 0;
+    width: 350px;
+}
+.restoGaleria{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: 70px 0 10px 30px;
+}
+    #principioGaleria{
+    width: 550px;
+}
+.portadaGaleria{
+    display: flex;
+    justify-content: center;
+}
+/* COMPAÑÍA */
+.coorp{
+    display: grid;
+}
+.tituloComp{
+    font-size: 45pt;
+}
+.coorp p{
+    font-size: 20pt;
+}
+.fotosCoorp{
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+#fondoCoorp{
+    width: 43rem;
+}
+/* CONTACTO */
+.contacto h1{
+    font-size: 45pt;
+}
+/* REGISTRO */
+.registro h1{
+    font-size: 45pt;
+}
+/* INICIAR SESION */
+.iniciar h1{
+    font-size: 45pt;
+}
+.rellenoInicio{
+    font-size: 15pt;
+}
+}
+
+/**************************/
+/****** TABLETAS ********/
+@media only screen and (min-width:768px) and (max-width:1279px){
+    .element1{
+        display: block;
+        margin-top: 10px;
+    }
+    .navLogo i{
+        display: none;
+    }
+    .element2 img{
+        width: 195px;
+    }
+    .element3{
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto;
+        align-self: start;
+        padding-top: 10px;
+    }
+    .element3 span{
+        display: block;
+    }
+    .element3 a{
+        padding: 0 10px;
+        font-size: 9.5pt;
+        font-weight: 600;
+    }
+    .element4 a{
+        font-size: 14pt;
+    }
+    h1{
+        font-size: 41pt;
+        padding: 40px 0 10px 0;
+    }
+    .eslogan h2{
+        font-size: 16pt;
+    }
+    .productosMate{
+        margin-top: 25px;
+    }
+    .mates{
+        grid-template-columns: repeat(3, auto);
+    }
+    .mate{
+        padding: 7px;
+    }
+    .pieDepagina{
+        grid-template-rows: auto;
+        padding: 14px 0;
+    }
+    .footerContenedor{
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, auto);
+        justify-items: center;
+    }
+    .mapa h4{
+        text-align: center;
+    }
+    #copyright h5{
+        font-weight: 300;
+        font-size: 10pt;
+    }
+    footer h4{
+        font-size: 13pt;
+        font-weight: 600;
+    }
+    .contactoFooter i{
+        font-size: 12pt;
+    }
+    .contactoFooter span{
+        font-size: 13pt;
+    }
+    .redesSociales{
+        text-align: center;
+    }
+    .redesSociales i{
+        font-size: 22px;
+    }
+    .botones a{
+        padding: 4px 7px;
+    }
+    #logoInicio{
+        width: 170px;
+    }
+    #navbarNavDropdown a{
+        font-size: 17pt;
+    }
+    .container-fluid button{
+        width: 80px;
+        height: 70px;
+    }
+    .navbar-toggler-icon{
+        width: 50px;
+    }
+    /* REGISTRO */
+    .registroEspacios{
+        font-size: 18pt;
+        margin-top: 22px;
+    }
+    /* INICIAR SESION */
+    .rellenoInicio{
+        font-size: 18pt;
+        margin-top: 20px;
+        margin-bottom: 245px;
+    }
+    /* CONTACTO */
+    .contacto h1{
+        font-size: 40pt;
+    }
+    .formularioContacto{
+        font-size: 18pt;
+    }
+    /* COMPAÑIA */
+    .coorp p{
+    font-size: 18pt;
+    }
+    /* PRODUCTOS */
+    .tituloProductos{
+        font-size: 22pt;
+    }
+    #nombreProducto{
+        font-size: 13pt;
+    }
+    #precioProducto{
+        font-size: 15pt;
+    }
+}
