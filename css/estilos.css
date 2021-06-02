@@ -110,6 +110,10 @@ h1{
     border-left: 1px solid #000;
     animation: maquina 5s infinite alternate steps(58);
 }
+.enviosAlpais{
+    text-align: center;
+    margin-top: 25px;
+}
 /* ANIMACION */
 @keyframes maquina {
     from{
@@ -427,6 +431,10 @@ div h4{
     .botones a{
         padding: 4px 7px;
     }
+    .enviosAlpais{
+        font-size: 16pt;
+        margin-top: 100px;
+    }
     /* PRODUCTOS */
     .allProducts{
         display: block;
@@ -630,5 +638,9 @@ div h4{
     }
     #precioProducto{
         font-size: 15pt;
+    }
+    .enviosAlpais{
+        font-size: 17pt;
+        margin-top: 70px;
     }
 }
