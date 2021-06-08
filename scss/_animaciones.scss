@@ -1,0 +1,71 @@
+// ANIMACIONES
+// Maquina de escribir
+@keyframes maquina {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+.botones{
+    padding: 10px 0;
+    display:flex;
+    justify-content: center;
+    a{
+        color: white;
+        text-decoration: none;
+        background: black;
+        display: inline-block;
+        animation: pulse 1.5s infinite;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .5)
+    }
+}
+// Botones luminosos
+@keyframes pulse {
+    0%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .1);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(256, 256, 256, .0);
+    }
+    100%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, .0);
+    }
+}
+// Página error 404
+@keyframes bounce{
+    0%, 20%, 50%, 100% {transform: translate(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+.error-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(70vh - 70px);
+    width: 100%;
+}
+.error-message__container{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.error-message__container h1{
+    font-size: 150px;
+}
+.error-message__container p{
+    font-size: 38px;
+}
+.bounce{
+    animation-name: bounce;
+}
+.animated{
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
