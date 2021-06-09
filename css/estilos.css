@@ -143,13 +143,6 @@ header {
     font-weight: 600;
     float: left;
     position: relative; }
-  .eslogan span {
-    position: absolute;
-    right: 0;
-    width: 0;
-    background: white;
-    border-left: 1px solid #000;
-    animation: maquina 5s infinite alternate steps(58); }
 
 .enviosAlpais {
   text-align: center;
@@ -324,6 +317,13 @@ div h4 {
     font-size: 23pt;
     font-weight: 500;
     padding: 0 0 25px 0; }
+  .eslogan span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: white;
+    border-left: 1px solid #000;
+    animation: maquina 5s infinite alternate steps(58); }
   .mates {
     grid-template-columns: repeat(5, auto); }
   .mate {
