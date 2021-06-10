@@ -137,10 +137,14 @@ header{
         font-size: 18pt;
     }
 }
+#mapaContacto{
+    display: none;
+}   
 .formularioContacto{
     display: grid;
     justify-content: center;
-    margin-top: 30px;
+    margin: 30px 20px 0 20px;
+    text-align: center;
 }
 // INICIO DE SESION
 .iniciar{
@@ -403,8 +407,29 @@ div h4{
     width: 43rem;
 }
 // CONTACTO
-.contacto h1{
+.contenidoContacto{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+.contacto{
+    display: grid;
+    h1{
     font-size: 45pt;
+}
+}
+.formularioContacto{
+    text-align: center;
+    div{
+        width: 100%;
+    }
+}
+#mapaContacto{
+    display: flex;
+    iframe{
+        width: 500px;
+        height: 500px;
+    }
 }
 // REGISTRO
 .registro{ 
@@ -553,7 +578,11 @@ div h4{
         font-size: 40pt;
     }
     .formularioContacto{
-        font-size: 18pt;
+        font-size: 19pt;
+        .form-check{
+            display: flex;
+            justify-content: center;
+        }
     }
     // COMPAÑIA
     .coorp p{
