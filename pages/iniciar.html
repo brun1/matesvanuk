@@ -82,14 +82,29 @@
         <div class="rellenoInicio">
             <a class="recuperarPass" href="#">¿Olvidaste la contraseña?</a>
             <!--Acá iría la recuperación de la contraseña o del usuario-->
-            <!--lo dejo para más adelante porque no sé como se hace-->
             <div class="ingresarUsuario">
-                <input type="text" name="email" placeholder="Correo electrónico">
-                <input type="password" name="contraseña" placeholder="Cotraseña">
-                <div class="botonesIngresar">
-                    <input type="submit" value="INGRESAR">
-                    <input type="reset" value="BORRAR">
-                </div>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Mail</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                ¿Desea mantener la sesión iniciada?
+                                <!-- Acá iría para mantener la sesión iniciada en el dispositivo que este -->
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
