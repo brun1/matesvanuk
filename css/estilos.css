@@ -217,17 +217,13 @@ header {
   margin-top: 10px; }
 
 .registro {
-  display: grid; }
+  display: grid;
+  margin: 20px;
+  text-align: center; }
 
 .registroEspacios {
   display: grid;
   justify-content: center; }
-
-.registro1 {
-  display: grid; }
-
-.registro3 {
-  display: grid; }
 
 .coorp {
   display: grid; }
@@ -314,7 +310,7 @@ div h4 {
     font-weight: 600;
     padding: 40px 0 10px 0; }
   .eslogan h2 {
-    font-size: 18pt;
+    font-size: 8pt;
     font-weight: 500;
     padding: 0 0 25px 0; }
   .eslogan span {
@@ -403,6 +399,8 @@ div h4 {
     width: 43rem; }
   .contacto h1 {
     font-size: 45pt; }
+  .registro div {
+    width: 100%; }
   .registro h1 {
     font-size: 45pt; }
   .iniciar h1 {
@@ -479,7 +477,8 @@ div h4 {
     width: 50px; }
   .registroEspacios {
     font-size: 18pt;
-    margin-top: 22px; }
+    margin-top: 22px;
+    text-align: start; }
   .rellenoInicio {
     font-size: 18pt;
     margin-top: 20px;
