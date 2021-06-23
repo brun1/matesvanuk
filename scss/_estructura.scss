@@ -124,16 +124,13 @@ header{
 }
 .galeriaFotos img{
     margin: 2px 0 2px 0;
-    width: 180px;
+    width: 100%;
 }
 #principioGaleria{
     width: 100%;
 }
 .restoGaleria{
     padding-top: 20px;
-    img{
-        padding: 15px;
-    }
 }
 // CONTACTO
 .contacto{
@@ -390,7 +387,10 @@ a.movil{
 .restoGaleria{
     display: grid;
     grid-template-columns: repeat(4, auto);
-    margin: 70px 0 10px 30px;
+    margin: 70px 30px 10px 30px;
+    img{
+        padding: 15px;
+    }
 }
     #principioGaleria{
     width: 550px;
@@ -510,7 +510,7 @@ a.movil{
         margin-top: 25px;
     }
     .mates{
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
     }
     .mate{
         padding: 7px;
@@ -615,5 +615,13 @@ a.movil{
     .enviosAlpais{
         font-size: 17pt;
         margin-top: 70px;
+    }
+    // GALERÍA
+    .restoGaleria{
+        margin-top: 20px;
+        padding: 0 10px 0 10px;
+        img{
+            width: 23.2rem;
+        }
     }
 }
