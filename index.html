@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +23,7 @@
     <!--Link de CSS-->
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
+
 <body>
     <!--COMIENZO DE LA PÁGINA CON EL HEADER-->
     <header class="contenedor">
@@ -44,7 +46,8 @@
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <a class="navbar-brand" href="./index.html"><img id="logoInicio" src="./Productos/LOGO.png" alt=""></a>
+                        <a class="navbar-brand" href="./index.html"><img id="logoInicio" src="./Productos/LOGO.png"
+                                alt=""></a>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
@@ -95,7 +98,7 @@
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
                             aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner">
@@ -109,7 +112,7 @@
                             <img src="./Productos/bombilla1.jpeg" class="d-block w-100">
                         </div>
                         <div class="carousel-item">
-                            <img src="./Productos/bombillas.jpeg" class="d-block w-100">
+                            <img src="./Productos/image00010.jpeg" class="d-block w-100">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -127,28 +130,81 @@
         </div>
         <div class="mates">
             <div class="mate">
-                <h3 id="nombreProducto">MATE IMPERIAL</h3>
-                <img class="img-fluid" src="./Productos/acomodados/mate1.jpg" alt="Mateimpnegro">
-                <h3 id="precioProducto">$Precio</h3>
-                <div class="botones"><a href="#">Ver Producto</a></div>
+                <div class="card">
+                    <div class="mask">
+                        <img class="img-fluid w-100" src="./Productos/acomodados/mate1.jpg" alt="mateimpnegro">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <p class="small text-muted text-uppercase mb-2">MATE IMPERIAL</p>
+                        <hr>
+                        <h3 class="mb-3">
+                            <span class="text-danger mr-1">$12.99</span>
+                            <span class="text-grey"><s>$36.99</s></span>
+                        </h3>
+                        <button type="button" class="btn btn-dark btn-sm mr-1 mb-2">
+                            <i class="fas fa-shopping-cart pr-2"></i> AÑADIRA AL CARRITO
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="mate">
-                <h3 id="nombreProducto">MATE CALABAZA</h3>
-                <img class="img-fluid" src="./Productos/acomodados/mate2.jpg" alt="matecalmarron">
-                <h3 id="precioProducto">$Precio</h3>
-                <div class="botones"><a href="#">Ver Producto</a></div>
+                <div class="card">
+                    <div class="mask">
+                        <img class="img-fluid w-100" src="./Productos/acomodados/mate2.jpg" alt="matecalmarron">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <p class="small text-muted text-uppercase mb-2">MATE CALABAZA</p>
+                        <hr>
+                        <h3 class="mb-3">
+                            <span class="text-grey">$36.99</span>
+                        </h3>
+                        <button type="button" class="btn btn-dark btn-sm mr-1 mb-2">
+                            <i class="fas fa-shopping-cart pr-2"></i> AÑADIR AL CARRITO
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="mate">
-                <h3 id="nombreProducto">MATE CAMIONERO</h3>
-                <img class="img-fluid" src="./Productos/acomodados/matebombinegro.jpg" alt="matecamnegro">
-                <h3 id="precioProducto">$Precio</h3>
-                <div class="botones"><a href="#">Ver Producto</a></div>
+                <div class="card">
+                    <div class="mask">
+                        <img class="img-fluid w-100" src="./Productos/acomodados/matebombinegro.jpg" alt="matecamnegro">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <p class="small text-muted text-uppercase mb-2">MATE CAMIONERO</p>
+                        <hr>
+                        <h3 class="mb-3">
+                            <span class="text-grey">$36.99</span>
+                        </h3>
+                        <button type="button" class="btn btn-dark btn-sm mr-1 mb-2">
+                            <i class="fas fa-shopping-cart pr-2"></i> AÑADIR AL CARRITO
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="mate">
-                <h3 id="nombreProducto">BOMBILLA DE ACERO</h3>
-                <img class="img-fluid" src="./Productos/acomodados/bombilla1.jpg" alt="bombillaacero">
-                <h3 id="precioProducto">$Precio</h3>
-                <div class="botones"><a href="#">Ver Producto</a></div>
+                <div class="card">
+                    <div class="mask">
+                        <img class="img-fluid w-100" src="./Productos/acomodados/bombilla1.jpg" alt="bombillaacero">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <p class="small text-muted text-uppercase mb-2">BOMBILLA DE ACERO</p>
+                        <hr>
+                        <h3 class="mb-3">
+                            <span class="text-grey">$36.99</span>
+                        </h3>
+                        <button type="button" class="btn btn-dark btn-sm mr-1 mb-2">
+                            <i class="fas fa-shopping-cart pr-2"></i> AÑADIR AL CARRITO
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <p class="enviosAlpais">Envíos a todo el país <i class="fas fa-truck"></i></p>
@@ -187,7 +243,8 @@
                 </div>
                 <div class="contactoFooter">
                     <h4>CONTACTANOS</h4>
-                    <a class="movil" href="tel:+54 9 1122222222"><i class="fas fa-phone-square-alt"></i>+54 9 1122222222</a>
+                    <a class="movil" href="tel:+54 9 1122222222"><i class="fas fa-phone-square-alt"></i>+54 9
+                        1122222222</a>
                     <br>
                     <span>matesvanuk@gmail.com</span>
                     <!--telefono y mail de contacto-->
@@ -216,4 +273,5 @@
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
