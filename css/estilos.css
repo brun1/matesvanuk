@@ -62,6 +62,18 @@
   animation-fill-mode: both;
   animation-iteration-count: infinite; }
 
+* {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: white; }
+
+ul, li, a {
+  text-decoration: none;
+  list-style: none; }
+
 h1 {
   justify-self: center;
   font-size: 22pt;
@@ -267,6 +279,12 @@ div h4 {
   justify-items: center; }
   #copyright h5 {
     font-size: 8px; }
+
+a.movil {
+  color: #fff;
+  text-decoration: none; }
+  a.movil:hover {
+    color: inherit; }
 
 /*************************************/
 @media only screen and (min-width: 1280px) {
@@ -478,11 +496,6 @@ div h4 {
     font-size: 12pt; }
   .contactoFooter span {
     font-size: 13pt; }
-  .contactoFooter a {
-    color: #fff;
-    text-decoration: none; }
-    .contactoFooter a:hover {
-      color: inherit; }
   .redesSociales {
     text-align: center; }
     .redesSociales i {
@@ -530,15 +543,3 @@ div h4 {
   .enviosAlpais {
     font-size: 17pt;
     margin-top: 70px; } }
-
-* {
-  padding: 0px;
-  margin: 0px; }
-
-body {
-  font-family: 'Josefin Sans', sans-serif;
-  background-color: white; }
-
-ul, li, a {
-  text-decoration: none;
-  list-style: none; }
