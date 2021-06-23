@@ -523,11 +523,19 @@ div h4{
         font-size: 13pt;
         font-weight: 600;
     }
-    .contactoFooter i{
-        font-size: 12pt;
-    }
-    .contactoFooter span{
-        font-size: 13pt;
+    .contactoFooter{
+        i{
+            font-size: 12pt;
+        }
+        span{
+            font-size: 13pt;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+            &:hover{color: inherit;
+            }
+        }
     }
     .redesSociales{
         text-align: center;
