@@ -171,7 +171,9 @@ header {
   width: 100%; }
 
 .restoGaleria {
-  margin-top: 30px; }
+  padding-top: 20px; }
+  .restoGaleria img {
+    padding: 15px; }
 
 .contacto {
   display: grid; }
